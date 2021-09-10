@@ -1,0 +1,14 @@
+Hello - this is a quick description of how I went about this.  I wanted to do it serverless if possible, so I thought about using
+Lambda, but it would require me rewriting some of the Node code.  The other route I thought of, was to put the app in a 
+Docker container, and then use ECS to run it in a load balanced set of EC2 containers.  Ultimately I used Fargate because it is
+serverless, rather than using ECS with EC2's.
+
+I have included my Dockerfile, and the Docker-entrypoint.sh
+
+Here is the URL where the app is running:
+
+http://noinc-lb-tf-1909580126.us-east-1.elb.amazonaws.com/api/hello
+
+Thanks for the opportunity.
+
+Jon
